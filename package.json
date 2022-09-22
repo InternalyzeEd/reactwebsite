@@ -1,7 +1,7 @@
 {
   "name": "gritlyv2-landingpage",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://internalyzeed.github.io/reactwebsite/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
