@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactwebsite/static/css/main.e03df6a4.css",
-    "main.js": "/reactwebsite/static/js/main.43910823.js",
+    "main.css": "/reactwebsite/static/css/main.053057f5.css",
+    "main.js": "/reactwebsite/static/js/main.ff34ad2b.js",
     "static/js/787.e440e10c.chunk.js": "/reactwebsite/static/js/787.e440e10c.chunk.js",
     "static/media/background-overlay-top.jpg": "/reactwebsite/static/media/background-overlay-top.9cd0e363cabc821b0cd6.jpg",
     "static/media/background-overlay-bottom.jpg": "/reactwebsite/static/media/background-overlay-bottom.00c3e984c65e3ebe8618.jpg",
@@ -16,14 +16,15 @@
     "static/media/insidevoices.svg": "/reactwebsite/static/media/insidevoices.3243e90ba0e93b537470a220c6326d69.svg",
     "static/media/skupos.svg": "/reactwebsite/static/media/skupos.f2df278e5f992f5e5df6eed5783e464e.svg",
     "static/media/misla.svg": "/reactwebsite/static/media/misla.3b8725265fcea0e5dff9130c19975c80.svg",
+    "static/media/dope.svg": "/reactwebsite/static/media/dope.560256fd6952d8b82d4a27121829428f.svg",
     "static/media/Gritly-logo.svg": "/reactwebsite/static/media/Gritly-logo.322605de8ccd4401486256a36e0cfa45.svg",
     "index.html": "/reactwebsite/index.html",
-    "main.e03df6a4.css.map": "/reactwebsite/static/css/main.e03df6a4.css.map",
-    "main.43910823.js.map": "/reactwebsite/static/js/main.43910823.js.map",
+    "main.053057f5.css.map": "/reactwebsite/static/css/main.053057f5.css.map",
+    "main.ff34ad2b.js.map": "/reactwebsite/static/js/main.ff34ad2b.js.map",
     "787.e440e10c.chunk.js.map": "/reactwebsite/static/js/787.e440e10c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e03df6a4.css",
-    "static/js/main.43910823.js"
+    "static/css/main.053057f5.css",
+    "static/js/main.ff34ad2b.js"
   ]
 }
