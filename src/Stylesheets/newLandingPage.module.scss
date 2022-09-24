@@ -110,7 +110,7 @@ $animationSpeed: 40s;
       font-style: normal;
       font-weight: 700;
       font-size: 128px;
-      line-height: 150px;
+      //line-height: 150px;
       > span {
         background: linear-gradient(
           90deg,
@@ -283,7 +283,7 @@ $animationSpeed: 40s;
           cursor: pointer;
           box-sizing: border-box;
           width: 562px;
-          height: 314px;
+          height: 350px;
           background: linear-gradient(
             153.32deg,
             rgba(255, 255, 255, 0.3) -65.62%,
