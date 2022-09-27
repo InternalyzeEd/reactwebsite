@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reactwebsite/static/css/main.053057f5.css",
+    "main.css": "/reactwebsite/static/css/main.80a80954.css",
     "main.js": "/reactwebsite/static/js/main.43910823.js",
     "static/js/787.e440e10c.chunk.js": "/reactwebsite/static/js/787.e440e10c.chunk.js",
     "static/media/background-overlay-top.jpg": "/reactwebsite/static/media/background-overlay-top.9cd0e363cabc821b0cd6.jpg",
@@ -18,12 +18,12 @@
     "static/media/misla.svg": "/reactwebsite/static/media/misla.3b8725265fcea0e5dff9130c19975c80.svg",
     "static/media/Gritly-logo.svg": "/reactwebsite/static/media/Gritly-logo.322605de8ccd4401486256a36e0cfa45.svg",
     "index.html": "/reactwebsite/index.html",
-    "main.053057f5.css.map": "/reactwebsite/static/css/main.053057f5.css.map",
+    "main.80a80954.css.map": "/reactwebsite/static/css/main.80a80954.css.map",
     "main.43910823.js.map": "/reactwebsite/static/js/main.43910823.js.map",
     "787.e440e10c.chunk.js.map": "/reactwebsite/static/js/787.e440e10c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.053057f5.css",
+    "static/css/main.80a80954.css",
     "static/js/main.43910823.js"
   ]
 }
