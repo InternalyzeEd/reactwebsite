@@ -21,6 +21,7 @@ import bedrock from "../Assets/Images/PartnerImages/Bedrock-logo-purple-1.png";
 import binti from "../Assets/Images/PartnerImages/binti-logo2x.png";
 
 import ContactUs from "./ContactUs";
+import { Helmet } from 'react-helmet';
 const partnerImages = [
   {
     key: 1,
@@ -103,11 +104,15 @@ const scrollToSection = () => {
 };
 
 const NewLandingPage = () => {
+  const [loadScript, setloadScript] = useState(false);
   const [toggle, updateToggle] = useState(false);
   const [toggleRoleSpecificCard, updateToggleRoleSpecificCard] =
     useState(false);
   const [toggleEmployers, updateToggleEmployers] = useState(false);
   const [toggleContactUs, updateToggleContactUs] = useState(false);
+  const clickOnForm = () => {
+    setloadScript(true);
+  };
   return (
     <div className={styles["main-div"]}>
       <div className={styles["header-wrapper"]}>
@@ -117,6 +122,18 @@ const NewLandingPage = () => {
           </a>
         </div>
         <div className={styles["right-placeholder"]}>
+          <button
+            data-tf-popup="cj9U9fZo"
+            data-tf-size="70"
+            data-tf-iframe-props="title=Gritly Application"
+            data-tf-medium="snippet"
+            style={{
+              all: "unset", fontFamily: "Helvetica,Arial,sans-serif", display: "inline-block", maxWidth: "100%", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", backgroundColor: "#0445AF", color: "#FFFFFF", fontSize: "20px", borderRadius: "25px", padding: "0 33px", fontWeight: "bold", height: "50px", cursor: "pointer", lineHeight: "50px", textAlign: "center", margin: 0, textDecoration: "none"
+            }}
+            onClick={() => { clickOnForm() }}
+          >
+            Apply now
+          </button>
           <Button
             classes={{ root: styles["button-styles"] }}
             onClick={() => scrollToSection()}
@@ -125,6 +142,12 @@ const NewLandingPage = () => {
           </Button>
         </div>
       </div>
+      {
+        loadScript && 
+        <Helmet>
+          <script src="https://embed.typeform.com/next/embed.js" type="text/javascript" />
+        </Helmet>
+      }
       <div className={styles["top-wrapper"]}>
         <div className={styles["body-wrapper"]}>
           <span>The future</span>
@@ -218,7 +241,7 @@ const NewLandingPage = () => {
             <span>FAQ</span>
             <span>Contact Us</span> */}
             <span>
-               {/* add the url  */}
+              {/* add the url  */}
               <a href="">Privacy Policy</a>
             </span>
           </div>
