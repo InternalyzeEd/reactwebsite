@@ -23,36 +23,34 @@ export default function EmployersCard(props) {
   const [sizeOfOrg, setSizeOfOrg] = React.useState("1-10");
   const [mailId, setMailId] = React.useState("");
 
-  const API_KEY = 'keyzBRn4UbKaJURDp';
-  const BASE_ID = 'appNYc0O78PZqeeQD';
+  const API_KEY = "keyzBRn4UbKaJURDp";
+  const BASE_ID = "appNYc0O78PZqeeQD";
 
   const headers = {
-    'Authorization': 'Bearer '+ API_KEY,
-    "Content-Type": "application/json"
+    Authorization: "Bearer " + API_KEY,
+    "Content-Type": "application/json",
   };
 
-
-
   const submitHandler = () => {
-    Axios.post(`https://api.airtable.com/v0/${BASE_ID}/Employer`,
-    {
-      records: [
-        {
-          "fields": {
-            "Company name": companyName,
-            "Size of organization": sizeOfOrg,
-            "Contact email": mailId
-          }
-        }
-      ]
-    },
-    {
-      headers: headers
-    }
-    )
-    .then(() => {
+    Axios.post(
+      `https://api.airtable.com/v0/${BASE_ID}/Employer`,
+      {
+        records: [
+          {
+            fields: {
+              "Company name": companyName,
+              "Size of organization": sizeOfOrg,
+              "Contact email": mailId,
+            },
+          },
+        ],
+      },
+      {
+        headers: headers,
+      }
+    ).then(() => {
       togglePopUp(false);
-    })
+    });
   };
 
   return (
@@ -117,7 +115,7 @@ export default function EmployersCard(props) {
           <TextField
             id="training-program-name"
             label="Type your answer here ..."
-            variant="standard"
+            variant="outlined"
             sx={{
               width: "450px",
             }}

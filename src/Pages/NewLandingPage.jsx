@@ -21,7 +21,7 @@ import bedrock from "../Assets/Images/PartnerImages/Bedrock-logo-purple-1.png";
 import binti from "../Assets/Images/PartnerImages/binti-logo2x.png";
 
 import ContactUs from "./ContactUs";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 const partnerImages = [
   {
     key: 1,
@@ -122,18 +122,18 @@ const NewLandingPage = () => {
           </a>
         </div>
         <div className={styles["right-placeholder"]}>
-          <button
+          <Button
             data-tf-popup="cj9U9fZo"
             data-tf-size="70"
             data-tf-iframe-props="title=Gritly Application"
             data-tf-medium="snippet"
-            style={{
-              all: "unset", fontFamily: "Helvetica,Arial,sans-serif", display: "inline-block", maxWidth: "100%", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", backgroundColor: "#0445AF", color: "#FFFFFF", fontSize: "20px", borderRadius: "25px", padding: "0 33px", fontWeight: "bold", height: "50px", cursor: "pointer", lineHeight: "50px", textAlign: "center", margin: 0, textDecoration: "none"
+            onClick={() => {
+              clickOnForm();
             }}
-            onClick={() => { clickOnForm() }}
+            className={styles["apply-now-header-button"]}
           >
             Apply now
-          </button>
+          </Button>
           <Button
             classes={{ root: styles["button-styles"] }}
             onClick={() => scrollToSection()}
@@ -142,12 +142,14 @@ const NewLandingPage = () => {
           </Button>
         </div>
       </div>
-      {
-        loadScript && 
+      {loadScript && (
         <Helmet>
-          <script src="https://embed.typeform.com/next/embed.js" type="text/javascript" />
+          <script
+            src="https://embed.typeform.com/next/embed.js"
+            type="text/javascript"
+          />
         </Helmet>
-      }
+      )}
       <div className={styles["top-wrapper"]}>
         <div className={styles["body-wrapper"]}>
           <span>The future</span>
